@@ -4,12 +4,15 @@ function SingleImage({ imagePath }) {
   const [active, setActive] = useState(false);
   return (
     <>
-      <div className="rounded-2xl bg-white">
-        <img
-          src={imagePath}
-          alt=""
-          className="w-96 h-80 rounded-t-xl cursor-pointer object-cover"
-        />
+      <div className="rounded-2xl bg-white shadow-xl">
+        <div className="w-96 h-80 rounded-t-xl cursor-pointer bg-black">
+          {" "}
+          <img
+            src={imagePath}
+            alt=""
+            className="w-96 h-80 rounded-t-xl object-contain"
+          />
+        </div>
         <div className="flex py-2 px-8 justify-between">
           <button
             className="text-black-200 font-[600] underline cursor-pointer"

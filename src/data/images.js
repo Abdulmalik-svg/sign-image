@@ -13,4 +13,11 @@ export const images = [
   "tel3.jpg",
   "tel14.jpg",
   "tel15.jpg",
+  "sign42.jpg",
+  "sign41.jpg", 
+  "sign43.jpg",
+  "sign44.jpg",
+  "sign45.jpg",
+  "sign46.jpg",
+  "sign6.jpg",
 ];
