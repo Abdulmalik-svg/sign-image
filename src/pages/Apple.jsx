@@ -1,5 +1,4 @@
 import React from "react";
-// import SingleImage from "./components/singleImage";
 import SingleImage from "./SingleImage";
 import { images } from "../data/images";
 import Footer from "../components/Footer";

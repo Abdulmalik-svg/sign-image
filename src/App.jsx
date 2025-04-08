@@ -1,15 +1,18 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Wall from "./pages/Wall";
+import Wallpaper from "./pages/Wallpaper";
 import Mobile from "./pages/Mobile";
+import Footer from "./components/Footer";
+import WallpaperCategory from "./pages/WallpaperCategory";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <Routes>
-        <Route path="/wall" element={<Wall />} />
+        <Route path="/wallpaper" element={<Wallpaper />} />
         <Route path="/mobile" element={<Mobile />} />
+        <Route path="/wallpapers/:category" element={<WallpaperCategory />} />
       </Routes>
     </Router>
   );
