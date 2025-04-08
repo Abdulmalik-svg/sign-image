@@ -55,7 +55,7 @@ function SingleImage({ imagePath }) {
         </div>
       )}
     </>
-  );
+  );  
 }
 
-export default SingleImage;
+export default SingleImage; 

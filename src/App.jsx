@@ -1,22 +1,17 @@
-import React from "react";
-import SingleImage from "./components/singleImage";
-import { images } from "./data/images";
-import Footer from "./components/Footer";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Wall from "./pages/Wall";
+import Mobile from "./pages/Mobile";
 
 function App() {
   return (
-    <div className="bg-white pb-20">
-      <h1 className="sticky top-0 text-center bg-orange-500 py-8 text-white text-4xl">
-        Sign Gallery
-      </h1>
-      <div className="ml-14 mb-14  flex flex-wrap w-auto gap-10 mt-10">
-        {images.map((image, i) => {
-          return <SingleImage imagePath={`/gallery/${image}`} key={i}/>;
-        })}
-      </div>
-      <Footer />
-    </div>
-    
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/wall" element={<Wall />} />
+        <Route path="/mobile" element={<Mobile />} />
+      </Routes>
+    </Router>
   );
 }
 
