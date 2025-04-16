@@ -30,6 +30,7 @@
     { name: "intel7.jpg", category: "tablet" },
     { name: "intel8.jpg", category: "tablet" },
     { name: "intel9.jpg", category: "tablet" },
+    { name: "sign20.jpg", category: "desktop" },
   ];
 
   export default wallpapers

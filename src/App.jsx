@@ -10,6 +10,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
+      <Route path="/" element={<Wallpaper />} />
         <Route path="/wallpaper" element={<Wallpaper />} />
         <Route path="/mobile" element={<Mobile />} />
         <Route path="/wallpapers/:category" element={<WallpaperCategory />} />

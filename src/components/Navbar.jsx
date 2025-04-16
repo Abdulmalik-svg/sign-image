@@ -6,6 +6,12 @@ function Navbar() {
       <div className="text-center py-6 text-4xl font-bold">Sign Gallery</div>
       <div className="flex justify-center gap-6 pb-4">
        
+      <Link
+          to="/wallpapers/tablet"
+          className="hover:underline hover:text-gray-200 transition duration-200"
+        >
+          Home
+        </Link>
         <Link
           to="/wallpapers/tablet"
           className="hover:underline hover:text-gray-200 transition duration-200"
