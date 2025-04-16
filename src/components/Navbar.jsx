@@ -7,7 +7,7 @@ function Navbar() {
       <div className="flex justify-center gap-6 pb-4">
        
       <Link
-          to="/wallpapers/tablet"
+          to="/"
           className="hover:underline hover:text-gray-200 transition duration-200"
         >
           Home
