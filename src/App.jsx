@@ -15,6 +15,7 @@ function App() {
         <Route path="/mobile" element={<Mobile />} />
         <Route path="/wallpapers/:category" element={<WallpaperCategory />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
